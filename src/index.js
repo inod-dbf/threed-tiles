@@ -333,9 +333,9 @@ function initCamera(width, height) {
     const camera = new THREE.PerspectiveCamera(70, width / height, 0.001, 3000);
     //camera.position.set(3973.55, 4973.8, 3.2851604304346775);
     camera.position.set(
-        -3881.7518817201294,
-        3766.5595662671353,
-        -3368.696123397543
+        -3811.5593088164296,
+        3654.0453377454273,
+        -3566.9588863624026
     );
     // camera.position.set(0, 0, 0)
     //camera.up.set(0, 1, 0);
@@ -365,6 +365,8 @@ function initController(camera, dom) {
     controller.rotateSpeed = 0.0001;
     controller.zoomSpeed = 0.002;
     controller.panSpeed = 0.002;
+
+    controller.enableRotate = true;
 
     controller.mouseButtons = {
         LEFT: null,
